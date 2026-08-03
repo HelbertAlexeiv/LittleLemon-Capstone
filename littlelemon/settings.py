@@ -88,7 +88,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'little_lemon_capstone',
+        'NAME': 'LittleLemon',
         'USER': 'root',
         'PASSWORD': 'alex2005',
         'HOST': 'localhost',
