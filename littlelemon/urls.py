@@ -24,7 +24,8 @@ router = DefaultRouter()
 router.register(r"tables", BookingViewSet)
 
 urlpatterns = [
-    path('admin', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/restaurant/', include('restaurant.urls')),
-    path('api/restaurant/booking/', include(router.urls))
+    path('api/restaurant/booking/', include(router.urls)),
+    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
 ]
