@@ -8,7 +8,7 @@ from .views import MenuItemsView, SingleMenuItemView, msg
 
 urlpatterns =[
     #path('', views.sayHello, name="hello")
-    path('', views.index, name='index'),
+    #path('', views.index, name='index'),
     path('message/', msg),
     path('menu/<int:pk>', SingleMenuItemView.as_view(), name='menu'),
     path('menu/items', MenuItemsView.as_view(), name='menu_items'),
